@@ -1,3 +1,37 @@
+// Get the error elements for author and title
+const authorError = document.getElementById('authorError');
+const titleError = document.getElementById('titleError');
+
+// Array to hold the list of books
+const books = JSON.parse(localStorage.getItem('books')) || [];
+
+// Reset input errors after 2 seconds
+const resetInputError = (errorElement) => {
+  setTimeout(() => {
+    errorElement.style.display = 'none';
+  }, 2000);
+};
+
+// Render list of books
+function renderBookList() {
+  const bookList = document.getElementById('book-list');
+  bookList.innerHTML = '';
+  books.forEach((book, index) => {
+    const li = document.createElement('li');
+    li.textContent = `${book.title} by ${book.author}`;
+    const removeBtn = document.createElement('button');
+    removeBtn.textContent = 'Remove';
+    removeBtn.addEventListener('click', () => {
+      // remove the book from the array and re-render the list
+      books.splice(index, 1);
+      localStorage.setItem('books', JSON.stringify(books));
+      renderBookList();
+    });
+    li.appendChild(removeBtn);
+    bookList.appendChild(li);
+  });
+}
+
 // add an event listener to the form submit button
 const addButton = document.getElementById('add-button');
 addButton.addEventListener('click', (event) => {
