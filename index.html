@@ -1,24 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <title>Awesome books</title>
     <link rel="stylesheet" href="style.css" />
-    <title>Awesome Books</title>
   </head>
   <body>
-    <h1>Awesome Books</h1>
     <ul id="book-list"></ul>
 
+    <hr />
+
+    <h1>Add a new book</h1>
+
     <form>
-      <input type="text" id="title" placeholder="Title" /><br /><br />
+      <input type="text" id="title" placeholder="Title" />
       <span id="titleError"></span>
 
-      <input type="text" id="author" placeholder="Author" /><br /><br />
+      <input type="text" id="author" placeholder="Author" />
+
       <span id="authorError"></span>
 
-      <button type="submit" id="add-button">Add</button>
+      <button type="submit" id="add-button">Add book</button>
     </form>
 
     <script src="script.js"></script>
