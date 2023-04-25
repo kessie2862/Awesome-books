@@ -55,7 +55,14 @@
 
 ### Key Features <a name="key-features"></a>
 
-This repo is a basic website that allows users to add/remove books to/from a list of books. 
+- User data is stored in the Local Storage
+- User data can also be retrieved from the Local Storage
+
+<!-- LIVE DEMO LINK -->
+
+## 🚀 Live Demo <a name="live-demo"></a>
+
+- [Live Demo Link](https://kessie2862.github.io/portfolio/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -83,6 +90,18 @@ Example commands:
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+
+### Install
+
+Install this project with:
+
+- Clone this Repo to your local machine and run in your preferred text editor(ex. Atom, VScode).
+
+### Usage
+Run the index.html with your preferred browser.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 <!-- AUTHORS -->
 
 ## 👥 Authors <a name="authors"></a>
@@ -103,7 +122,7 @@ Example commands:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[We will add styles to improve the UI]**
+- [ ] **[Add dynamic navigation and improve the UI]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
