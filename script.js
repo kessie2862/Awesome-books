@@ -82,3 +82,6 @@ class BookList {
     });
   }
 }
+
+const bookList = new BookList();
+bookList.init();
