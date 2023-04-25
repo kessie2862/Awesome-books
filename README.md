@@ -55,7 +55,14 @@
 
 ### Key Features <a name="key-features"></a>
 
-This repo is a basic website that allows users to add/remove books to/from a list of books. 
+- User data is stored in the Local Storage
+- User data can also be retrieved from the Local Storage
+
+<!-- LIVE DEMO LINK -->
+
+## 🚀 Live Demo <a name="live-demo"></a>
+
+- [Live Demo Link](https://kessie2862.github.io/Awesome-books/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -67,7 +74,7 @@ We will take you through the process. follow these steps.
 
 ### Prerequisites
 
-In order to get started, you need to be familiar with basic **git commands**, **HTML5**, **CSS3** and how to **Create a repository**.
+In order to get started, you be familiar with basic **git commands**.
 
 ### Setup
 
@@ -80,6 +87,18 @@ Example commands:
 
   git clone git@github.com:myaccount/my-project.git
 ```
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+### Install
+
+Install this project with:
+
+- Clone this Repo to your local machine and run in your preferred text editor(ex. Atom, VScode).
+
+### Usage
+Run the index.html with your preferred browser.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -103,7 +122,7 @@ Example commands:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[We will add styles to improve the UI]**
+- [ ] **[Add dynamic navigation and improve the UI]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
