@@ -1,3 +1,13 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  border: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
 body {
   font-family: 'Poppins', sans-serif;
 }
@@ -5,14 +15,15 @@ body {
 h1 {
   text-align: center;
   font-size: 1.3rem;
-  margin-top: 1.6rem;
+  margin: 1.6rem 0 2rem;
+  color: #0062cc;
 }
 
 form {
   display: flex;
   flex-direction: column;
-  max-width: 30rem;
-  width: 50%;
+  max-width: 50rem;
+  width: 80%;
   margin: 0 auto 1rem;
 }
 
@@ -21,6 +32,7 @@ input[type='text'] {
   font-size: 1rem;
   border: 1px solid #ccc;
   border-radius: 4px;
+  margin-bottom: 0.5rem;
 }
 
 button[type='submit'] {
@@ -31,7 +43,7 @@ button[type='submit'] {
   border-radius: 4px;
   font-size: 1rem;
   cursor: pointer;
-  width: 20%;
+  width: 30%;
   align-self: self-end;
 }
 
@@ -39,15 +51,26 @@ button[type='submit']:hover {
   background-color: #0062cc;
 }
 
-ul {
-  list-style: none;
-  padding: 0;
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: self-end;
+  gap: 1rem;
+}
+
+#book-list ul {
   max-width: 30rem;
   width: 50%;
   margin: 1rem auto 0;
 }
 
-li {
+.content-section ul li {
+  font-weight: 400;
+  font-size: 0.97rem;
+  list-style: circle;
+}
+
+#book-list li {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -76,8 +99,83 @@ span {
   margin-bottom: 1rem;
 }
 
-hr {
-  width: 10%;
-  border-bottom: 1px solid rgb(106, 106, 106);
-  margin-top: 3rem;
+/* NAVIGATION */
+nav {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  border: 1px solid rgb(106, 106, 106);
+  border-radius: 0.3rem;
+  width: 90%;
+  margin: 1rem auto 0;
+}
+
+nav > a {
+  color: rgb(106, 106, 106);
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+nav ul a {
+  font-weight: 700;
+  color: rgb(106, 106, 106);
+}
+
+nav ul a:active {
+  font-weight: bolder;
+}
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.content-section {
+  width: 70%;
+  margin: 2rem auto 0;
+  color: rgb(106, 106, 106);
+}
+
+.content-section h2 {
+  text-align: center;
+  color: #0062cc;
+}
+
+.content-section h3 {
+  margin: 1.5rem 0 3rem;
+  font-weight: 400;
+  font-size: 1.1rem;
+}
+
+.active {
+  color: #0062cc;
+}
+
+.hidden {
+  display: none;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(106, 106, 106);
+  color: #fff;
+  padding: 1.2rem 0;
+  text-align: center;
+}
+
+#current-time {
+  display: flex;
+  justify-content: flex-end;
+  align-self: flex-end;
+  width: 90%;
+  margin: 1rem auto 0;
+}
+
+#current-time p {
+  color: rgb(106, 106, 106);
+  font-weight: bolder;
 }
