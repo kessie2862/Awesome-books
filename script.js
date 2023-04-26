@@ -11,6 +11,25 @@ class BookList {
   }
 
   init() {
+    // Add event listeners to the navigation links
+    const navLinks = document.querySelectorAll('nav a');
+    navLinks.forEach((link) => {
+      link.addEventListener('click', (event) => {
+        event.preventDefault();
+
+        // Remove active class from all nav items
+        navLinks.forEach((navLink) => {
+          navLink.classList.remove('active');
+        });
+
+        // Add active class to the clicked nav item
+        link.classList.add('active');
+
+        const sectionId = link.getAttribute('href').substring(1);
+        this.showSection(sectionId);
+      });
+    });
+
     // Add an event listener to the form submit button
     const addButton = document.getElementById('add-button');
     addButton.addEventListener('click', (event) => {
@@ -68,6 +87,12 @@ class BookList {
   renderBookList() {
     const bookList = document.getElementById('book-list');
     bookList.innerHTML = '';
+
+    // Header for list books page
+    const h1 = document.createElement('h1');
+    h1.textContent = 'All Awesome Books';
+    bookList.appendChild(h1);
+
     this.books.forEach((book, index) => {
       const li = document.createElement('li');
       li.textContent = `${book.title} by ${book.author}`;
@@ -81,6 +106,18 @@ class BookList {
       bookList.appendChild(li);
     });
   }
+
+  showSection = (sectionId) => {
+    // Hide all content sections
+    const contentSections = document.querySelectorAll('.content-section');
+    contentSections.forEach((section) => {
+      section.classList.add('hidden');
+    });
+
+    // Show the selected content section
+    const selectedSection = document.getElementById(sectionId);
+    selectedSection.classList.remove('hidden');
+  };
 }
 
 const bookList = new BookList();
