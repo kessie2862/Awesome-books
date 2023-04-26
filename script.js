@@ -122,3 +122,13 @@ class BookList {
 
 const bookList = new BookList();
 bookList.init();
+
+function updateDateTime() {
+  const now = new Date();
+  const date = now.toLocaleDateString();
+  const time = now.toLocaleTimeString();
+  document.getElementById('datetime').innerHTML = `${date} ${time}`;
+}
+
+// Call updateDateTime function every second to update the time
+setInterval(updateDateTime, 1000);
