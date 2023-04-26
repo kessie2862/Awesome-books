@@ -14,22 +14,59 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <ul id="book-list"></ul>
+    <nav>
+      <a href="#">Awesome Books</a>
+      <ul>
+        <li><a href="#book-list" class="active">List</a></li>
+        <li><a href="#add-book-form">Add new</a></li>
+        <li><a href="#contact-info">Contact</a></li>
+      </ul>
+    </nav>
 
-    <hr />
+    <!-- Displaying the current date and time -->
+    <section id="current-time">
+      <p id="datetime"></p>
+    </section>
 
-    <h1>Add a new book</h1>
+    <main>
+      <section id="book-list" class="content-section"></section>
 
-    <form>
-      <input type="text" id="title" placeholder="Title" />
-      <span id="titleError"></span>
+      <section id="add-book-form" class="content-section hidden">
+        <h1>Add a new book</h1>
+        <form>
+          <input type="text" id="title" placeholder="Title" />
+          <span id="titleError"></span>
 
-      <input type="text" id="author" placeholder="Author" />
+          <input type="text" id="author" placeholder="Author" />
 
-      <span id="authorError"></span>
+          <span id="authorError"></span>
 
-      <button type="submit" id="add-button">Add book</button>
-    </form>
+          <button type="submit" id="add-button">Add book</button>
+        </form>
+      </section>
+
+      <section id="contact-info" class="content-section hidden">
+        <h2>Contact Information</h2>
+        <h3>
+          We can help. Out team of experts is on hand to answer your questions.
+          You can contact us.
+        </h3>
+        <ul>
+          <li>Our email: kayp3477@gmail.com</li>
+          <li>Our phone: +233(0)551627120</li>
+          <li>Our address: Bonds Square. Accra, Ghana.</li>
+        </ul>
+      </section>
+    </main>
+
+    <!-- Add a section to display the current date and time -->
+    <section id="current-time">
+      <p id="datetime"></p>
+    </section>
+
+    <footer>
+      <p>&copy2023 Prosper Kessie and Supreeti Kushwaha</p>
+    </footer>
 
     <script src="script.js"></script>
   </body>
