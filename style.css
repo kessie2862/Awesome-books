@@ -6,6 +6,7 @@
   box-sizing: border-box;
   text-decoration: none;
   list-style: none;
+  overflow-x: hidden;
 }
 
 body {
@@ -178,4 +179,18 @@ footer {
 #current-time p {
   color: rgb(106, 106, 106);
   font-weight: bolder;
+}
+
+@media screen and (max-width: 500px) {
+  nav {
+    justify-content: center;
+  }
+
+  nav > a {
+    display: none;
+  }
+
+  form {
+    width: 90%;
+  }
 }
